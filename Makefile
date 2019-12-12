@@ -38,7 +38,17 @@ requirements pip:
 	@ pip install -e .
 	@ echo "You are ready to go ;-)"
 
-full_clean:
+requirementsdev:
+	@ if [ -z "${VIRTUAL_ENV}" ]; then \
+		echo "Not inside a virtualenv."; \
+		exit 1; \
+	fi
+	@ echo "Upgrading pip..."
+	@ pip install --upgrade pip
+	@ echo "Updating pip packages:"
+	@ pip install -r "requirements_dev.txt"
+
+cleanfull:
 	@ echo "Cleaning old files..."
 	@ rm -rf .pytest_cache
 	@ rm -rf .tox
@@ -46,6 +56,7 @@ full_clean:
 	@ rm -rf build
 	@ rm -rf */__pycache__
 	@ rm -rf *.egg-info
+	@ rm -rf .coverage*
 	@ rm -rf env
 	@ echo "All done!"
 
@@ -57,6 +68,7 @@ clean:
 	@ rm -rf build
 	@ rm -rf */__pycache__
 	@ rm -rf *.egg-info
+	@ rm -rf .coverage*
 	@ echo "All done!"
 
 test:
