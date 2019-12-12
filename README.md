@@ -3,6 +3,7 @@
 This is an example for python projects.
 
 ![](https://github.com/claick-oliveira/python-package-example/workflows/Python%20package/badge.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Getting Started
 
