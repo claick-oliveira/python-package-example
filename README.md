@@ -2,6 +2,8 @@
 
 This is an example for python projects.
 
+![](https://github.com/claick-oliveira/python-package-example/workflows/Python%20package/badge.svg)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project.
