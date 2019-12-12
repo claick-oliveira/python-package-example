@@ -100,7 +100,7 @@ make cleanfull
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/claick-oliveira/python-package-example/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/claick-oliveira/python-package-example/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Authors
 
