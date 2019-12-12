@@ -1,6 +1,6 @@
 # Python Package Example
 
-This is a example for pythton projects.
+This is an example for python projects.
 
 ## Getting Started
 
