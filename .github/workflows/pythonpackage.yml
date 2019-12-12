@@ -19,10 +19,9 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
-        make venv
-        make activate
-        make requirements
-        make requirementsdev
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install -r requirements_dev.txt
     - name: Tests with tox
       run: |
-        make test
+        tox
